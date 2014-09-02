@@ -6,6 +6,8 @@ public class MenuObject : MonoBehaviour {
 
 	public bool Quit = false;
 	public bool Options = false;
+	public bool Start = false;
+	public bool Back = false;
 
 	void OnMouseEnter(){
 
@@ -24,12 +26,14 @@ public class MenuObject : MonoBehaviour {
 		if(Quit)
 			Application.Quit ();
 
-		else
-			if(Options)
-				Application.LoadLevel ("Options Scene");
+		if(Options)
+			Application.LoadLevel ("Options Scene");
 			
-			else
-				Application.LoadLevel ("Orbit Scene");
+		if(Start)
+			Application.LoadLevel ("Orbit Scene");
+
+		if(Back)
+			Application.LoadLevel ("Main Menu Scene");
 	
 	}
 
