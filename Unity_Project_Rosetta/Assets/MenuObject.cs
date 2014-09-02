@@ -12,7 +12,7 @@ public class MenuObject : MonoBehaviour {
 	void OnMouseEnter(){
 
 		renderer.material.color = Color.red;
-	
+		
 	}
 
 	void OnMouseExit(){

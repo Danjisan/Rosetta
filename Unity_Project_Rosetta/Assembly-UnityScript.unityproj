@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\CameraOrbit1.js" />
      <Compile Include="Assets\MouseOrbit.js" />
+     <Compile Include="Assets\PauseMenu.js" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
