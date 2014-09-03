@@ -5,6 +5,7 @@ private var pauseGame : boolean = false;
 private var showGUI1 : boolean = false;
 private var showGUI2 : boolean = false;
 private var showOptions : boolean = false;
+private var stillpause : boolean = false;
 
 /*GameObject.Find("GAME PAUSED").guiText.enabled = false;
 GameObject.Find("Resume").guiText.enabled = false;
@@ -28,8 +29,11 @@ function Start () {
 }
 
 function Update () {
-	if (Input.GetKeyDown(KeyCode.Escape) || GameObject.Find("Resume").collider.isTrigger)
+	if ((Input.GetKeyDown(KeyCode.Escape) || GameObject.Find("Resume").collider.isTrigger) && !stillpause)
 		pause();
+		
+	if(GameObject.Find("Options").collider.isTrigger && Input.GetKeyDown(KeyCode.Escape))
+		GameObject.Find("Options").collider.isTrigger = false;
 	
 	if(pauseGame)
 	{	Time.timeScale = 0;
@@ -74,10 +78,12 @@ function Update () {
 	if(GameObject.Find("Options").collider.isTrigger)
 	{	showGUI2 = false;
 		showOptions = true;
+		stillpause = true;
 	}
 	else
 	{	showGUI2 = true;
 		showOptions = false;
+		stillpause = false;
 	}
 
 }

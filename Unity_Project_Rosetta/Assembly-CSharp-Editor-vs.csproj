@@ -113,10 +113,10 @@
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
- <HintPath>C:/Users/CALIN/Desktop/Rosetta/Unity_Project_Rosetta/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ <HintPath>D:/FILES/My Documents/projects/unity/Rosetta/Unity_Project_Rosetta/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
  <Reference Include="Assembly-UnityScript">
- <HintPath>C:/Users/CALIN/Desktop/Rosetta/Unity_Project_Rosetta/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+ <HintPath>D:/FILES/My Documents/projects/unity/Rosetta/Unity_Project_Rosetta/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>D:/FILES/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
