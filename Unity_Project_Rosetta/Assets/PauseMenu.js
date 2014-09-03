@@ -32,7 +32,6 @@ function Update () {
 	if(GameObject.Find("Resume").collider.isTrigger)// && !stillpause1 && !stillpause2 && !stillpause3)
 		pause();
 		
-		
 	if(GameObject.Find("Options").collider.isTrigger && Input.GetKeyDown(KeyCode.Escape))
 		GameObject.Find("Options").collider.isTrigger = false;
 		
