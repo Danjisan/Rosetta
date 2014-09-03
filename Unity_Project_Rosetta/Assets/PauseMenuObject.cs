@@ -8,6 +8,10 @@ public class PauseMenuObject : MonoBehaviour {
 	public bool Desktop = false;
 	public bool MainMenu = false;
 	public bool Back = false;
+	public bool YesD = false;
+	public bool NoD = false;
+	public bool NoM = false;
+	public bool YesM = false;
 
 	
 	void OnMouseEnter(){
@@ -25,20 +29,32 @@ public class PauseMenuObject : MonoBehaviour {
 	void OnMouseDown(){
 		
 		if(Desktop)
-			Application.Quit ();
+			GameObject.Find("Quit to Desktop").collider.isTrigger = true;
 
 		if(Options)
 			GameObject.Find("Options").collider.isTrigger = true;
 		
 		if(Resume)
 			GameObject.Find("Resume").collider.isTrigger = true;
+
 		
 		if(MainMenu)
-			Application.LoadLevel ("Main Menu Scene");
+			GameObject.Find("Quit to Main Menu").collider.isTrigger = true;
 
 		if (Back)
 			GameObject.Find("Options").collider.isTrigger = false;
-		
+
+		if(YesD)
+			Application.Quit ();
+
+		if (NoD)
+			GameObject.Find("Quit to Desktop").collider.isTrigger = false;
+
+		if(NoM)
+			GameObject.Find("Quit to Main Menu").collider.isTrigger = false;
+
+		if(YesM)
+			Application.LoadLevel ("Main Menu Scene");
 	}
 	
 }
