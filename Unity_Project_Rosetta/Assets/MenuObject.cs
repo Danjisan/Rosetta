@@ -7,12 +7,15 @@ public class MenuObject : MonoBehaviour {
 	public bool Options = false;
 	public bool Start = false;
 	public bool Back = false;
+	public bool Yes = false;
 
 
 	void Update(){
 		if(GameObject.Find ("Nothing Here").collider.isTrigger && Input.GetKeyDown(KeyCode.Escape))
 			Application.LoadLevel ("Main Menu Scene");
-	}
+		if(GameObject.Find ("Yes").collider.isTrigger && Input.GetKeyDown(KeyCode.Escape))
+			Application.LoadLevel ("Main Menu Scene");
+	}	
 
 	void OnMouseEnter(){
 
@@ -29,7 +32,7 @@ public class MenuObject : MonoBehaviour {
 	void OnMouseDown(){
 
 		if(Quit)
-			Application.Quit ();
+			Application.LoadLevel ("Confirmation Scene");
 
 		if(Options)
 			Application.LoadLevel ("Options Scene");
@@ -39,6 +42,9 @@ public class MenuObject : MonoBehaviour {
 
 		if(Back)
 			Application.LoadLevel ("Main Menu Scene");
+
+		if (Yes)
+			Application.Quit ();
 	
 	}
 
