@@ -7,6 +7,7 @@ public class PauseMenuObject : MonoBehaviour {
 	public bool Options = false;
 	public bool Desktop = false;
 	public bool MainMenu = false;
+	public bool Back = false;
 
 	
 	void OnMouseEnter(){
@@ -25,15 +26,18 @@ public class PauseMenuObject : MonoBehaviour {
 		
 		if(Desktop)
 			Application.Quit ();
-		
+
 		if(Options)
-			Application.LoadLevel ("Options Scene");
+			GameObject.Find("Options").collider.isTrigger = true;
 		
 		if(Resume)
-			collider.isTrigger = true;
+			GameObject.Find("Resume").collider.isTrigger = true;
 		
 		if(MainMenu)
 			Application.LoadLevel ("Main Menu Scene");
+
+		if (Back)
+			GameObject.Find("Options").collider.isTrigger = false;
 		
 	}
 	
