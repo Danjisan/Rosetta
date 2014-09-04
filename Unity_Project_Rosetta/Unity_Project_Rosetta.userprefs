@@ -1,12 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MenuObject.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Revolve.cs">
     <Files>
+      <File FileName="Assets\Revolve.cs" Line="7" Column="27" />
       <File FileName="Assets\CameraOrbit1.js" Line="1" Column="1" />
-      <File FileName="Assets\MenuObject.cs" Line="15" Column="46" />
+      <File FileName="Assets\MenuObject.cs" Line="13" Column="16" />
       <File FileName="Assets\MouseOrbit.js" Line="1" Column="1" />
-      <File FileName="Assets\PauseMenuObject.cs" Line="38" Column="3" />
-      <File FileName="Assets\PauseMenu.js" Line="53" Column="20" />
+      <File FileName="Assets\PauseMenuObject.cs" Line="27" Column="3" />
+      <File FileName="Assets\PauseMenu.js" Line="49" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
