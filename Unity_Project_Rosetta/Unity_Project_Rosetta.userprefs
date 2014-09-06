@@ -1,15 +1,15 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MoveCamera.cs">
     <Files>
       <File FileName="Unity_Project_Rosetta.sln" Line="1" Column="1" />
       <File FileName="Assets\Revolve.cs" Line="1" Column="1" />
-      <File FileName="Assets\PauseMenu.js" Line="52" Column="22" />
-      <File FileName="Assets\CameraOrbit1.js" Line="42" Column="37" />
-      <File FileName="Assets\MenuObject.cs" Line="6" Column="25" />
+      <File FileName="Assets\PauseMenu.js" Line="1" Column="1" />
+      <File FileName="Assets\MenuObject.cs" Line="1" Column="1" />
       <File FileName="Assets\MouseOrbit.js" Line="1" Column="1" />
       <File FileName="Assets\PauseMenuObject.cs" Line="1" Column="1" />
-      <File FileName="Assets\MoveCamera.cs" Line="13" Column="3" />
+      <File FileName="Assets\MoveCamera.cs" Line="21" Column="4" />
+      <File FileName="Assets\CameraOrbit1.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
