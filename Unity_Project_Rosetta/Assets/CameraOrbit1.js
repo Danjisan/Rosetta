@@ -26,33 +26,47 @@ function Start () {
 }
 
 function LateUpdate () {
-    
-    if (target) {
+    if(Input.GetKey (KeyCode.LeftShift)){
     	if (Input.GetMouseButton (0)){
     	
         	x += Input.GetAxis("Mouse X") * xSpeed * 0.02;
-       		y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02;
- 		
- 			y = ClampAngle(y, yMinLimit, yMaxLimit);
+       		y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02; 		
  		}
        
-       	var rotation = Quaternion.Euler(y, x, 0);
-       	var position = rotation * Vector3(0.0, 0.0, -distance) + target.position;
+     	  var rotation = Quaternion.Euler(y, x, 0);
+     	  
+     	  transform.rotation = rotation;
+     }
+    
+    else{
+    
+    	if (target) {
+    		if (Input.GetMouseButton (0)){
+    	
+        		x += Input.GetAxis("Mouse X") * xSpeed * 0.02;
+       			y -= Input.GetAxis("Mouse Y") * ySpeed * 0.02; 			
+ 			}
+ 			
+ 			y = ClampAngle(y, yMinLimit, yMaxLimit);
+       
+     	  	rotation = Quaternion.Euler(y, x, 0);
+     	  	var position = rotation * Vector3(0.0, 0.0, -distance) + target.position;
         
-       	transform.rotation = rotation;
-        transform.position = position;
+      	 	transform.rotation = rotation;
+      	  	transform.position = position;
     
-    }
+   		 }
   
-    //set distance value according to the scroll wheel input
-    distance -=Input.GetAxis("Mouse ScrollWheel") * sensitivitydistance;
+    	//set distance value according to the scroll wheel input
+   		 distance -=Input.GetAxis("Mouse ScrollWheel") * sensitivitydistance;
     
-    //reset camera to max,min distances in order to remain postitioned corectly
-    if(distance<mindistance)
-    	distance=mindistance;
+    	//reset camera to max,min distances in order to remain postitioned corectly
+    	if(distance<mindistance)
+    		distance=mindistance;
     
-    if(distance>maxdistance)
-    	distance=maxdistance;
+    	if(distance>maxdistance)
+    		distance=maxdistance;
+    }
 }
 
 static function ClampAngle (angle : float, min : float, max : float) {
