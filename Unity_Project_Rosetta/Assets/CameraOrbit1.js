@@ -12,6 +12,7 @@ var yMaxLimit = 80;
 
 private var x = 0.0;
 private var y = 0.0;
+private var RotateorMove : boolean = false;
 
 @script AddComponentMenu("Camera-Control/Mouse Orbit")
 
@@ -26,7 +27,10 @@ function Start () {
 }
 
 function LateUpdate () {
-    if(Input.GetKey (KeyCode.LeftShift)){
+    if(Input.GetKeyDown (KeyCode.LeftShift))
+    	RotateorMove=!RotateorMove;
+    	
+    if (RotateorMove){
     	if (Input.GetMouseButton (0)){
     	
         	x += Input.GetAxis("Mouse X") * xSpeed * 0.02;
@@ -36,6 +40,7 @@ function LateUpdate () {
      	  var rotation = Quaternion.Euler(y, x, 0);
      	  
      	  transform.rotation = rotation;
+     	     	  
      }
     
     else{
