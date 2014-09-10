@@ -1,8 +1,8 @@
 ﻿var target : Transform;
 var distance = 10.0;
 var sensitivitydistance = 50;
-var maxdistance=1000;
-var mindistance=15;
+var maxdistance = 1000;
+var mindistance = 15;
 
 var xSpeed = 250.0;
 var ySpeed = 120.0;
@@ -13,6 +13,7 @@ var yMaxLimit = 80;
 private var x = 0.0;
 private var y = 0.0;
 private var RotateorMove : boolean = false;
+//var MoveCamera.cs : MoveCamera.cs;
 
 @script AddComponentMenu("Camera-Control/Mouse Orbit")
 
@@ -28,7 +29,9 @@ function Start () {
 
 function LateUpdate () {
     if(Input.GetKeyDown (KeyCode.LeftShift))
-    	RotateorMove=!RotateorMove;
+    {	RotateorMove=!RotateorMove;
+     	//MoveCamera.functionmove();
+    }
     	
     if (RotateorMove){
     	if (Input.GetMouseButton (0)){

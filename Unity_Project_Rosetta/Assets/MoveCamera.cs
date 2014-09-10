@@ -7,27 +7,35 @@ public class MoveCamera : MonoBehaviour {
 	private Vector3 position;
 	private bool reset = false;
 	private bool save = true;
+	public bool move = false;
+
+	void functionmove(){
+			move = !move;
+		}
 
 
 	void LateUpdate () {
-		if(save)
-			position = transform.position;
+		if (Input.GetKeyDown (KeyCode.LeftShift))
+						functionmove ();
+				if (save)
+						position = transform.position;
 
-		if (reset){
-			transform.position = position;
-			for(int i=0; i<3 ;i++)
-				reset = false;
-			save = true;
-		}
-
-		else{
-			if (Input.GetKey("w"))
-		   	 transform.Translate(Vector3.forward * Time.deltaTime * Speed, Space.Self);
+				if (move) 
+				{	if (reset) {
+						transform.position = position;
+						for (int i=0; i<2; i++)
+							reset = false;
+						save = true;
+					} 
+					else {
+						if (Input.GetKey ("w"))
+							transform.Translate (Vector3.forward * Time.deltaTime * Speed, Space.Self);
 		    
-			if(Input.GetKey("s"))
-				transform.Translate(Vector3.back * Time.deltaTime * Speed, Space.Self);
+						if (Input.GetKey ("s"))
+							transform.Translate (Vector3.back * Time.deltaTime * Speed, Space.Self);
+					}
+				}
 		}
-	}
 
 	void OnCollisionStay(){
 		reset = true;
