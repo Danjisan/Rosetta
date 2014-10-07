@@ -5,8 +5,6 @@ Project("{D2AE4A5A-FB6B-59BC-D6D0-4334509A9114}") = "Unity_Project_Rosetta", "As
 EndProject
 Project("{D2AE4A5A-FB6B-59BC-D6D0-4334509A9114}") = "Unity_Project_Rosetta", "Assembly-CSharp.csproj", "{8472D341-A26B-B268-47D7-A7C8623BAF1A}"
 EndProject
-Project("{D2AE4A5A-FB6B-59BC-D6D0-4334509A9114}") = "Unity_Project_Rosetta", "Assembly-CSharp-Editor.csproj", "{2CDF714D-5F1A-8194-0E62-9DEF122E6D46}"
-EndProject
 Project("{D2AE4A5A-FB6B-59BC-D6D0-4334509A9114}") = "Unity_Project_Rosetta", "Assembly-UnityScript-firstpass.unityproj", "{C583BD32-CCB4-6B63-90C7-9D092074BA64}"
 EndProject
 Project("{D2AE4A5A-FB6B-59BC-D6D0-4334509A9114}") = "Unity_Project_Rosetta", "Assembly-UnityScript.unityproj", "{C75A5F21-E430-59F9-CD73-55223AD4A805}"
@@ -25,10 +23,6 @@ Global
 		{8472D341-A26B-B268-47D7-A7C8623BAF1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8472D341-A26B-B268-47D7-A7C8623BAF1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8472D341-A26B-B268-47D7-A7C8623BAF1A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2CDF714D-5F1A-8194-0E62-9DEF122E6D46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2CDF714D-5F1A-8194-0E62-9DEF122E6D46}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2CDF714D-5F1A-8194-0E62-9DEF122E6D46}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2CDF714D-5F1A-8194-0E62-9DEF122E6D46}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C583BD32-CCB4-6B63-90C7-9D092074BA64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C583BD32-CCB4-6B63-90C7-9D092074BA64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C583BD32-CCB4-6B63-90C7-9D092074BA64}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,7 +35,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																GlobalSection(MonoDevelopProperties) = preSolution
+																																																		GlobalSection(MonoDevelopProperties) = preSolution
 																			GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
