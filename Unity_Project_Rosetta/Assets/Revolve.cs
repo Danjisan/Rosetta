@@ -5,6 +5,7 @@ public class Revolve : MonoBehaviour {
 
 
 	void Update () {
-		transform.Rotate(Vector3.down * Time.deltaTime * 0.0083333f);
+		transform.Rotate(Vector3.back * Time.deltaTime * 0.0083333f);
 	}
 }
+//0.0083333f
