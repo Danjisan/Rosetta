@@ -33,6 +33,19 @@ public class MoveCamera : MonoBehaviour {
 		    
 						if (Input.GetKey ("s"))
 							transform.Translate (Vector3.back * Time.deltaTime * Speed, Space.Self);
+
+						if (Input.GetKey ("a"))
+							transform.Translate (Vector3.left * Time.deltaTime * Speed);
+				
+						if (Input.GetKey ("d"))
+							transform.Translate (Vector3.right * Time.deltaTime * Speed);
+						
+						/*if (Input.GetKey ("q"))
+							transform.Rotate (Vector3.forward * Time.deltaTime * Speed);
+				
+						if (Input.GetKey ("e"))
+							transform.Rotate (Vector3.back * Time.deltaTime * Speed);*/
+
 					}
 				}
 		}
