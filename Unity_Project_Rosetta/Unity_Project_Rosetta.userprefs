@@ -1,6 +1,6 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MoveCamera.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CameraOrbit2.js">
     <Files>
       <File FileName="Unity_Project_Rosetta.sln" Line="1" Column="1" />
       <File FileName="Assets\Revolve.cs" Line="1" Column="1" />
@@ -9,7 +9,7 @@
       <File FileName="Assets\MouseOrbit.js" Line="1" Column="1" />
       <File FileName="Assets\PauseMenuObject.cs" Line="1" Column="1" />
       <File FileName="Assets\MoveCamera.cs" Line="47" Column="67" />
-      <File FileName="Assets\CameraOrbit1.js" Line="28" Column="2" />
+      <File FileName="Assets\CameraOrbit2.js" Line="60" Column="46" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
