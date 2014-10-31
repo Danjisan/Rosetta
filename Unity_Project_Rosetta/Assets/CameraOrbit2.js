@@ -1,14 +1,17 @@
 ﻿var target : Transform;
 var distance = 10.0;
 var sensitivitydistance = 50;
-var maxdistance = 1000;
-var mindistance = 15;
+var maxdistance : float = 1000;
+var mindistance : float = 15;
 
 var xSpeed = 250.0;
 var ySpeed = 120.0;
 
 var yMinLimit = -20;
 var yMaxLimit = 80;
+
+var xMinLimit = -20;
+var xMaxLimit = 80;
 
 private var x = 0.0;
 private var y = 0.0;
@@ -18,7 +21,6 @@ private var pposition : Vector3;
 private var protation : Quaternion;
 private var position : Vector3;
 private var rotation : Quaternion;
-//var MoveCamera.cs : MoveCamera.cs;
 
 @script AddComponentMenu("Camera-Control/Mouse Orbit")
 
@@ -33,8 +35,8 @@ function Start () {
 }
 
 function LateUpdate () {
-    	
-    	if(save)
+    	//Save position and reload on collision
+    	/*if(save)
     	{	protation = rotation;
     		pposition = position;
     	}
@@ -48,7 +50,7 @@ function LateUpdate () {
     		save=  true;
     	}
     	
-    	else{
+    	else{*/
     	
     		if (target) {
     			if (Input.GetMouseButton (0)){
@@ -58,6 +60,7 @@ function LateUpdate () {
  				}
  			
  				y = ClampAngle(y, yMinLimit, yMaxLimit);
+ 				x = ClampAngle (x, xMinLimit, xMaxLimit);
        
      	  		rotation = Quaternion.Euler(y, x, 0);
      	  		position = rotation * Vector3(0.0, 0.0, -distance) + target.position;
@@ -66,7 +69,7 @@ function LateUpdate () {
       	  		transform.position = position;
     
    			 }
-   		}
+   		//}
   
     	//set distance value according to the scroll wheel input
    		 distance -=Input.GetAxis("Mouse ScrollWheel") * sensitivitydistance;
@@ -81,10 +84,10 @@ function LateUpdate () {
     }
 
 
-function OnCollisionStay(){
+/*function OnCollisionStay(){
 	reset=true;
 	save=false;
-}
+}*/
 
 static function ClampAngle (angle : float, min : float, max : float) {
 	if (angle < -360)

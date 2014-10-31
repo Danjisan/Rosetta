@@ -53,6 +53,7 @@ public class MoveCamera : MonoBehaviour {
 	void OnCollisionStay(){
 		reset = true;
 		save=false;
+		Debug.Log("s");
 	}
 }
 
