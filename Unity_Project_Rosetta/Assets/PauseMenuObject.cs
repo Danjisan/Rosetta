@@ -13,7 +13,10 @@ public class PauseMenuObject : MonoBehaviour {
 	public bool NoM = false;
 	public bool YesM = false;
 
-	
+
+	void Start(){
+		guiText.material.color = Color.blue;
+	}
 	void OnMouseEnter(){
 
 		guiText.material.color = Color.red;
@@ -22,7 +25,7 @@ public class PauseMenuObject : MonoBehaviour {
 	
 	void OnMouseExit(){
 
-		guiText.material.color = Color.white;
+		guiText.material.color = Color.blue;
 		
 	}
 	

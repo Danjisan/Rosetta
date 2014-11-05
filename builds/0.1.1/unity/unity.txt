@@ -1,0 +1,72 @@
+projects/scenes/assets
+project view/hierarchy/console/INSPECTOR
+collider/phisics/rigidbody
+import
+acces through scripts
+c#/java - monodevelop
+prefab
+build
+
+asset store
+
+
+programming:
+update - frames
+how to refer to objects
+comments
+organize code
+public/private
+float variables
+no run, just build
+debug.log
+
+make a new game:
+1. create project
+2. import all assets
+3. create scene
+4. create plane (100X100) - texture
+5. create light
+6. create cube (adjust camera, add rigidbody, attach camera
+7. add script to move object c#
+8. play with variables & gravity
+9. build player
+
+
+script:
+
+using UnityEngine;
+using System.Collections;
+
+public class testmove : MonoBehaviour {
+
+	private float rotatespeed = 20f;
+	public float speed = 20f;
+
+	// Update is called once per frame
+	void Update () {
+		if (Input.GetKey ("w"))
+		    transform.Translate (Vector3.forward * Time.deltaTime * speed);
+
+		if (Input.GetKey ("s"))
+			transform.Translate (Vector3.back * Time.deltaTime * speed);
+
+		if (Input.GetKey ("a"))
+			transform.Rotate (Vector3.down * Time.deltaTime * rotatespeed);
+
+		if (Input.GetKey ("d"))
+			transform.Rotate (Vector3.up * Time.deltaTime * rotatespeed);
+
+		/*if (Input.GetKey ("q"))
+			transform.Rotate (Vector3.forward * Time.deltaTime * rotatespeed);
+
+		if (Input.GetKey ("e"))
+			transform.Rotate (Vector3.back * Time.deltaTime * rotatespeed);
+
+		if(Input.GetKey (KeyCode.LeftControl))
+		    transform.Rotate (Vector3.right * Time.deltaTime * rotatespeed);
+
+		if (Input.GetKey (KeyCode.LeftShift))
+		    transform.Rotate (Vector3.left * Time.deltaTime * rotatespeed); */
+	}
+}
+

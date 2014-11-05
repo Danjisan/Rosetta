@@ -21,12 +21,11 @@ function pause (){
 		collider.isTrigger = false;
 }
 
-function Start () {
-
-}
 
 function Update () {
 	if (Input.GetKeyDown(KeyCode.Escape) && !stillpause1 && !stillpause2 && !stillpause3)
+		pause();
+	if(GameObject.Find("Resume").guiText.material.color == Color.red && Input.GetMouseButtonDown(0))
 		pause();
 		
 	if(GameObject.Find("Resume").collider.isTrigger)// && !stillpause1 && !stillpause2 && !stillpause3)
@@ -44,14 +43,14 @@ function Update () {
 	if(pauseGame)
 	{	Time.timeScale = 0;
 		showGUI1 = true;
-		GameObject.Find("Main Camera").GetComponent(CameraOrbit1).enabled = false;
+		GameObject.Find("Main Camera").GetComponent(CameraOrbit2).enabled = false;
 		
 	}
 	
 	if(!pauseGame)
 	{	Time.timeScale = 1;
 		showGUI1 = false;
-		GameObject.Find("Main Camera").GetComponent(CameraOrbit1).enabled = true;
+		GameObject.Find("Main Camera").GetComponent(CameraOrbit2).enabled = true;
 	}
 	
 	if(showGUI1 && showGUI2 && showGUI3 && showGUI4)
