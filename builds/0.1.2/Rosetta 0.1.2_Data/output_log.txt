@@ -1,0 +1,142 @@
+Initialize engine version: 4.5.3f3 (fca41a4fabea)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 750 Ti (ID=0x1380)
+    Vendor:   NVIDIA
+    VRAM:     1974 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\FILES\My Documents\projects\unity\Rosetta\builds\0.1.2\Rosetta 0.1.2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\FILES\My Documents\projects\unity\Rosetta\builds\0.1.2\Rosetta 0.1.2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\FILES\My Documents\projects\unity\Rosetta\builds\0.1.2\Rosetta 0.1.2_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading D:\FILES\My Documents\projects\unity\Rosetta\builds\0.1.2\Rosetta 0.1.2_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: D:\FILES\My Documents\projects\unity\Rosetta\builds\0.1.2\Rosetta 0.1.2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\FILES\My Documents\projects\unity\Rosetta\builds\0.1.2\Rosetta 0.1.2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\FILES\My Documents\projects\unity\Rosetta\builds\0.1.2\Rosetta 0.1.2_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading D:\FILES\My Documents\projects\unity\Rosetta\builds\0.1.2\Rosetta 0.1.2_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: D:\FILES\My Documents\projects\unity\Rosetta\builds\0.1.2\Rosetta 0.1.2_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading D:\FILES\My Documents\projects\unity\Rosetta\builds\0.1.2\Rosetta 0.1.2_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.034 seconds
+desktop: 1920x1080 60Hz; virtual: 3200x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 0.901987 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 212.
+Total: 1.286569 ms (FindLiveObjects: 0.028677 ms CreateObjectMapping: 0.023545 ms MarkObjects: 0.162707 ms  DeleteObjects: 0.074863 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PauseMenu2.pause () [0x00000] in <filename unknown>:0 
+  at PauseMenu2.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PauseMenu2.pause () [0x00000] in <filename unknown>:0 
+  at PauseMenu2.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PauseMenu2.pause () [0x00000] in <filename unknown>:0 
+  at PauseMenu2.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PauseMenu2.pause () [0x00000] in <filename unknown>:0 
+  at PauseMenu2.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PauseMenu2.pause () [0x00000] in <filename unknown>:0 
+  at PauseMenu2.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PauseMenu2.pause () [0x00000] in <filename unknown>:0 
+  at PauseMenu2.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PauseMenu2.pause () [0x00000] in <filename unknown>:0 
+  at PauseMenu2.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PauseMenu2.pause () [0x00000] in <filename unknown>:0 
+  at PauseMenu2.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PauseMenu2.pause () [0x00000] in <filename unknown>:0 
+  at PauseMenu2.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PauseMenu2.pause () [0x00000] in <filename unknown>:0 
+  at PauseMenu2.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PauseMenu2.pause () [0x00000] in <filename unknown>:0 
+  at PauseMenu2.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PauseMenu2.pause () [0x00000] in <filename unknown>:0 
+  at PauseMenu2.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PauseMenu2.pause () [0x00000] in <filename unknown>:0 
+  at PauseMenu2.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PauseMenu2.pause () [0x00000] in <filename unknown>:0 
+  at PauseMenu2.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PauseMenu2.pause () [0x00000] in <filename unknown>:0 
+  at PauseMenu2.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PauseMenu2.pause () [0x00000] in <filename unknown>:0 
+  at PauseMenu2.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnloadTime: 1.187858 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 208.
+Total: 1.281135 ms (FindLiveObjects: 0.027772 ms CreateObjectMapping: 0.025357 ms MarkObjects: 0.154255 ms  DeleteObjects: 0.106560 ms)
+
+UnloadTime: 1.130804 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 131.
+Total: 1.603231 ms (FindLiveObjects: 0.020527 ms CreateObjectMapping: 0.024149 ms MarkObjects: 0.142482 ms  DeleteObjects: 0.501104 ms)
+
+UnloadTime: 0.685244 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 123.
+Total: 1.182726 ms (FindLiveObjects: 0.015999 ms CreateObjectMapping: 0.028677 ms MarkObjects: 0.164519 ms  DeleteObjects: 0.041959 ms)
+
