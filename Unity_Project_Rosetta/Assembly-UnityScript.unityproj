@@ -50,6 +50,7 @@
      <Compile Include="Assets\CameraOrbit2.js" />
      <Compile Include="Assets\MouseOrbit.js" />
      <Compile Include="Assets\PauseMenu.js" />
+     <Compile Include="Assets\PauseMenu2.js" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
